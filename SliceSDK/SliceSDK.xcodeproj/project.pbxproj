@@ -1,0 +1,622 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		141D91691B6231F600BA94F6 /* SliceAuthApp-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 141D91681B6231F600BA94F6 /* SliceAuthApp-Bridging-Header.h */; };
+		143136F51B629F2D00D0140D /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 143136F41B629F2D00D0140D /* AddressBook.framework */; };
+		143136F91B629F3700D0140D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 143136F81B629F3700D0140D /* SystemConfiguration.framework */; };
+		1437A9E71B62239700814C47 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1437A9DF1B62239700814C47 /* Images.xcassets */; };
+		1437A9EC1B62239700814C47 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1437A9E61B62239700814C47 /* Info.plist */; };
+		1437A9ED1B62254200814C47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1437A9E11B62239700814C47 /* AppDelegate.swift */; };
+		1437A9EE1B62254200814C47 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1437A9E21B62239700814C47 /* LaunchScreen.xib */; };
+		1437A9EF1B62254200814C47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1437A9E31B62239700814C47 /* Main.storyboard */; };
+		14697C8A1B669BBF00BB08E3 /* NSDate+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14697C891B669BBF00BB08E3 /* NSDate+Extensions.swift */; };
+		14828C5B1BA2E54000A8A170 /* SliceClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14828C5A1BA2E54000A8A170 /* SliceClient.swift */; };
+		14828C5D1BA2E86600A8A170 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14828C5C1BA2E86600A8A170 /* WebViewController.swift */; };
+		14828C621BA3394100A8A170 /* ProductionEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14828C611BA3394100A8A170 /* ProductionEndpoint.swift */; };
+		14C9DD0C1B61A3AA002D5D8E /* NetworkManager.swift in Headers */ = {isa = PBXBuildFile; fileRef = 14E21C171B6192CF00959386 /* NetworkManager.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		14C9DD0D1B61A3AA002D5D8E /* ServerEndpoint.swift in Headers */ = {isa = PBXBuildFile; fileRef = 14E21C201B6192CF00959386 /* ServerEndpoint.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		14E21C281B6192CF00959386 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E21C171B6192CF00959386 /* NetworkManager.swift */; };
+		14E21C311B6192CF00959386 /* ServerEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E21C201B6192CF00959386 /* ServerEndpoint.swift */; };
+		14E21C331B6192CF00959386 /* SliceSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 14E21C221B6192CF00959386 /* SliceSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		690C033C842876F654D8EC90 /* Pods_SliceAuthApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 148A7F2BB35B32658368C894 /* Pods_SliceAuthApp.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		6CCAD94FC488C61BA4AEEF53 /* Pods_SliceSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B29ADD2C126D233F5FD66D95 /* Pods_SliceSDK.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0357A9F76091692F28DBAF71 /* Pods-SliceSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SliceSDK.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-SliceSDK/Pods-SliceSDK.debug.xcconfig"; sourceTree = "<group>"; };
+		141D91681B6231F600BA94F6 /* SliceAuthApp-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SliceAuthApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		143136F41B629F2D00D0140D /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		143136F81B629F3700D0140D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		1437A9BB1B62232F00814C47 /* SliceSDKApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SliceSDKApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1437A9DF1B62239700814C47 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1437A9E11B62239700814C47 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1437A9E21B62239700814C47 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		1437A9E31B62239700814C47 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		1437A9E41B62239700814C47 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1437A9E61B62239700814C47 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14697C891B669BBF00BB08E3 /* NSDate+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Extensions.swift"; sourceTree = "<group>"; };
+		14828C581BA2E4F000A8A170 /* AccountCoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountCoder.swift; sourceTree = "<group>"; };
+		14828C5A1BA2E54000A8A170 /* SliceClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliceClient.swift; sourceTree = "<group>"; };
+		14828C5C1BA2E86600A8A170 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		14828C611BA3394100A8A170 /* ProductionEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductionEndpoint.swift; sourceTree = "<group>"; };
+		148A7F2BB35B32658368C894 /* Pods_SliceAuthApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SliceAuthApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		14AAA36F1BA37C3E00BC442C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		14E21C141B6192CF00959386 /* Account.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		14E21C161B6192CF00959386 /* AccountStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountStore.swift; sourceTree = "<group>"; };
+		14E21C171B6192CF00959386 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		14E21C201B6192CF00959386 /* ServerEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerEndpoint.swift; sourceTree = "<group>"; };
+		14E21C221B6192CF00959386 /* SliceSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SliceSDK.h; sourceTree = "<group>"; };
+		14E21C241B6192CF00959386 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14E8D5CA1B6189B0001940EF /* SliceSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SliceSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		565F7AB6159D88955D1D7C29 /* Pods-SliceSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SliceSDK.release.xcconfig"; path = "../Pods/Target Support Files/Pods-SliceSDK/Pods-SliceSDK.release.xcconfig"; sourceTree = "<group>"; };
+		A461E8EC704AA641101F4247 /* Pods_SliceAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SliceAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B29ADD2C126D233F5FD66D95 /* Pods_SliceSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SliceSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1437A9B81B62232F00814C47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				143136F91B629F3700D0140D /* SystemConfiguration.framework in Frameworks */,
+				143136F51B629F2D00D0140D /* AddressBook.framework in Frameworks */,
+				690C033C842876F654D8EC90 /* Pods_SliceAuthApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14E8D5C61B6189B0001940EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CCAD94FC488C61BA4AEEF53 /* Pods_SliceSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1437A9DD1B62239700814C47 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				1437A9E01B62239700814C47 /* Sources */,
+				1437A9DE1B62239700814C47 /* Resources */,
+				1437A9E51B62239700814C47 /* Target */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		1437A9DE1B62239700814C47 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1437A9DF1B62239700814C47 /* Images.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1437A9E01B62239700814C47 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				141D91681B6231F600BA94F6 /* SliceAuthApp-Bridging-Header.h */,
+				1437A9E11B62239700814C47 /* AppDelegate.swift */,
+				1437A9E21B62239700814C47 /* LaunchScreen.xib */,
+				1437A9E31B62239700814C47 /* Main.storyboard */,
+				1437A9E41B62239700814C47 /* ViewController.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		1437A9E51B62239700814C47 /* Target */ = {
+			isa = PBXGroup;
+			children = (
+				1437A9E61B62239700814C47 /* Info.plist */,
+			);
+			path = Target;
+			sourceTree = "<group>";
+		};
+		14828C5E1BA2EAB200A8A170 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				14E21C221B6192CF00959386 /* SliceSDK.h */,
+				14828C5A1BA2E54000A8A170 /* SliceClient.swift */,
+				14E21C201B6192CF00959386 /* ServerEndpoint.swift */,
+				14697C891B669BBF00BB08E3 /* NSDate+Extensions.swift */,
+			);
+			name = Public;
+			sourceTree = "<group>";
+		};
+		14828C601BA3379D00A8A170 /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				14828C5C1BA2E86600A8A170 /* WebViewController.swift */,
+				14E21C171B6192CF00959386 /* NetworkManager.swift */,
+				14828C611BA3394100A8A170 /* ProductionEndpoint.swift */,
+				14E21C141B6192CF00959386 /* Account.swift */,
+				14E21C161B6192CF00959386 /* AccountStore.swift */,
+				14828C581BA2E4F000A8A170 /* AccountCoder.swift */,
+			);
+			name = Private;
+			sourceTree = "<group>";
+		};
+		14E21C121B6192CF00959386 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				14E21C131B6192CF00959386 /* Source */,
+				14E21C231B6192CF00959386 /* Target */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+		14E21C131B6192CF00959386 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				14828C601BA3379D00A8A170 /* Private */,
+				14828C5E1BA2EAB200A8A170 /* Public */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		14E21C231B6192CF00959386 /* Target */ = {
+			isa = PBXGroup;
+			children = (
+				14E21C241B6192CF00959386 /* Info.plist */,
+			);
+			path = Target;
+			sourceTree = "<group>";
+		};
+		14E8D5C01B6189B0001940EF = {
+			isa = PBXGroup;
+			children = (
+				14E21C121B6192CF00959386 /* Framework */,
+				1437A9DD1B62239700814C47 /* App */,
+				14E8D5CB1B6189B0001940EF /* Products */,
+				CDD7282572B198C075E734E7 /* Pods */,
+				431FFB73857FDAA113F87746 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		14E8D5CB1B6189B0001940EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				14E8D5CA1B6189B0001940EF /* SliceSDK.framework */,
+				1437A9BB1B62232F00814C47 /* SliceSDKApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		431FFB73857FDAA113F87746 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				14AAA36F1BA37C3E00BC442C /* Foundation.framework */,
+				143136F81B629F3700D0140D /* SystemConfiguration.framework */,
+				143136F41B629F2D00D0140D /* AddressBook.framework */,
+				A461E8EC704AA641101F4247 /* Pods_SliceAuth.framework */,
+				148A7F2BB35B32658368C894 /* Pods_SliceAuthApp.framework */,
+				B29ADD2C126D233F5FD66D95 /* Pods_SliceSDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CDD7282572B198C075E734E7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0357A9F76091692F28DBAF71 /* Pods-SliceSDK.debug.xcconfig */,
+				565F7AB6159D88955D1D7C29 /* Pods-SliceSDK.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		14E8D5C71B6189B0001940EF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				141D91691B6231F600BA94F6 /* SliceAuthApp-Bridging-Header.h in Headers */,
+				14E21C331B6192CF00959386 /* SliceSDK.h in Headers */,
+				14C9DD0C1B61A3AA002D5D8E /* NetworkManager.swift in Headers */,
+				14C9DD0D1B61A3AA002D5D8E /* ServerEndpoint.swift in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1437A9BA1B62232F00814C47 /* SliceExampleApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1437A9DB1B62232F00814C47 /* Build configuration list for PBXNativeTarget "SliceExampleApp" */;
+			buildPhases = (
+				E52C1175EA37909FEFEB0807 /* Check Pods Manifest.lock */,
+				1437A9B71B62232F00814C47 /* Sources */,
+				1437A9B81B62232F00814C47 /* Frameworks */,
+				1437A9B91B62232F00814C47 /* Resources */,
+				943780A5C0B4D3752F8F5B54 /* Embed Pods Frameworks */,
+				B8EC3DBD647E5FFCF63E2208 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SliceExampleApp;
+			productName = SliceAuthApp;
+			productReference = 1437A9BB1B62232F00814C47 /* SliceSDKApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		14E8D5C91B6189B0001940EF /* SliceSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14E8D5E01B6189B0001940EF /* Build configuration list for PBXNativeTarget "SliceSDK" */;
+			buildPhases = (
+				BEDA3711BD59A1C71AD5B792 /* Check Pods Manifest.lock */,
+				14E8D5C51B6189B0001940EF /* Sources */,
+				14E8D5C61B6189B0001940EF /* Frameworks */,
+				14E8D5C71B6189B0001940EF /* Headers */,
+				14E8D5C81B6189B0001940EF /* Resources */,
+				306D5A50B9FFCFFD4F108FC0 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SliceSDK;
+			productName = SliceAuth;
+			productReference = 14E8D5CA1B6189B0001940EF /* SliceSDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		14E8D5C11B6189B0001940EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Slice Technologies, Inc.";
+				TargetAttributes = {
+					1437A9BA1B62232F00814C47 = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = J7MUH5Y2ZT;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+						};
+					};
+					14E8D5C91B6189B0001940EF = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = 14E8D5C41B6189B0001940EF /* Build configuration list for PBXProject "SliceSDK" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 14E8D5C01B6189B0001940EF;
+			productRefGroup = 14E8D5CB1B6189B0001940EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				14E8D5C91B6189B0001940EF /* SliceSDK */,
+				1437A9BA1B62232F00814C47 /* SliceExampleApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1437A9B91B62232F00814C47 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1437A9EE1B62254200814C47 /* LaunchScreen.xib in Resources */,
+				1437A9EF1B62254200814C47 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14E8D5C81B6189B0001940EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1437A9E71B62239700814C47 /* Images.xcassets in Resources */,
+				1437A9EC1B62239700814C47 /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		306D5A50B9FFCFFD4F108FC0 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-SliceSDK/Pods-SliceSDK-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		943780A5C0B4D3752F8F5B54 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-SliceAuthApp/Pods-SliceAuthApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B8EC3DBD647E5FFCF63E2208 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-SliceAuthApp/Pods-SliceAuthApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BEDA3711BD59A1C71AD5B792 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E52C1175EA37909FEFEB0807 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1437A9B71B62232F00814C47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1437A9ED1B62254200814C47 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14E8D5C51B6189B0001940EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14697C8A1B669BBF00BB08E3 /* NSDate+Extensions.swift in Sources */,
+				14828C621BA3394100A8A170 /* ProductionEndpoint.swift in Sources */,
+				14E21C311B6192CF00959386 /* ServerEndpoint.swift in Sources */,
+				14828C5B1BA2E54000A8A170 /* SliceClient.swift in Sources */,
+				14828C5D1BA2E86600A8A170 /* WebViewController.swift in Sources */,
+				14E21C281B6192CF00959386 /* NetworkManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1437A9D71B62232F00814C47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = App/Target/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = SliceSDKApp;
+				SWIFT_OBJC_BRIDGING_HEADER = "App/Sources/SliceExampleApp-Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		1437A9D81B62232F00814C47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				INFOPLIST_FILE = App/Target/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = SliceSDKApp;
+				SWIFT_OBJC_BRIDGING_HEADER = "App/Sources/SliceExampleApp-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		14E8D5DE1B6189B0001940EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		14E8D5DF1B6189B0001940EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		14E8D5E11B6189B0001940EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0357A9F76091692F28DBAF71 /* Pods-SliceSDK.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Framework/Target/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = SliceSDK;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		14E8D5E21B6189B0001940EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 565F7AB6159D88955D1D7C29 /* Pods-SliceSDK.release.xcconfig */;
+			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Framework/Target/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = SliceSDK;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1437A9DB1B62232F00814C47 /* Build configuration list for PBXNativeTarget "SliceExampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1437A9D71B62232F00814C47 /* Debug */,
+				1437A9D81B62232F00814C47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14E8D5C41B6189B0001940EF /* Build configuration list for PBXProject "SliceSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14E8D5DE1B6189B0001940EF /* Debug */,
+				14E8D5DF1B6189B0001940EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14E8D5E01B6189B0001940EF /* Build configuration list for PBXNativeTarget "SliceSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14E8D5E11B6189B0001940EF /* Debug */,
+				14E8D5E21B6189B0001940EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 14E8D5C11B6189B0001940EF /* Project object */;
+}
