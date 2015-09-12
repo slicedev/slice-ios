@@ -11,7 +11,7 @@ struct ProductionEndpoint: ServerEndpoint {
     let host = "api.slice.com"
     
     var baseURL: NSURL {
-        return NSURL(scheme: scheme, host: host, path: "")!
+        return NSURL(scheme: scheme, host: host, path: "/")!
     }
     
     let authorizationPath = "oauth/authorize"
