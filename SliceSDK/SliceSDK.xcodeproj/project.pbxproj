@@ -7,56 +7,56 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		141D91691B6231F600BA94F6 /* SliceAuthApp-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 141D91681B6231F600BA94F6 /* SliceAuthApp-Bridging-Header.h */; };
+		142591961BA4C495001248AC /* Foundation+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1425918C1BA4C495001248AC /* Foundation+Extensions.swift */; };
+		142591971BA4C495001248AC /* NSDate+Formatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1425918D1BA4C495001248AC /* NSDate+Formatting.swift */; };
+		142591981BA4C495001248AC /* NSURL+Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1425918E1BA4C495001248AC /* NSURL+Query.swift */; };
+		142591991BA4C495001248AC /* ServerEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1425918F1BA4C495001248AC /* ServerEndpoint.swift */; };
+		1425919A1BA4C495001248AC /* SliceClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142591901BA4C495001248AC /* SliceClient.swift */; };
+		1425919B1BA4C495001248AC /* SliceSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 142591911BA4C495001248AC /* SliceSDK.h */; };
+		1425919C1BA4C495001248AC /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142591931BA4C495001248AC /* NetworkManager.swift */; };
+		1425919D1BA4C495001248AC /* ProductionEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142591941BA4C495001248AC /* ProductionEndpoint.swift */; };
+		1425919E1BA4C495001248AC /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142591951BA4C495001248AC /* WebViewController.swift */; };
+		142591A31BA4C4B0001248AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142591A01BA4C4B0001248AC /* AppDelegate.swift */; };
+		142591A41BA4C4B0001248AC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 142591A11BA4C4B0001248AC /* LaunchScreen.xib */; };
+		142591A51BA4C4B0001248AC /* SliceExampleApp-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 142591A21BA4C4B0001248AC /* SliceExampleApp-Bridging-Header.h */; };
 		143136F51B629F2D00D0140D /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 143136F41B629F2D00D0140D /* AddressBook.framework */; };
 		143136F91B629F3700D0140D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 143136F81B629F3700D0140D /* SystemConfiguration.framework */; };
 		1437A9E71B62239700814C47 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1437A9DF1B62239700814C47 /* Images.xcassets */; };
 		1437A9EC1B62239700814C47 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1437A9E61B62239700814C47 /* Info.plist */; };
-		1437A9ED1B62254200814C47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1437A9E11B62239700814C47 /* AppDelegate.swift */; };
-		1437A9EE1B62254200814C47 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1437A9E21B62239700814C47 /* LaunchScreen.xib */; };
-		1437A9EF1B62254200814C47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1437A9E31B62239700814C47 /* Main.storyboard */; };
-		14697C8A1B669BBF00BB08E3 /* NSDate+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14697C891B669BBF00BB08E3 /* NSDate+Extensions.swift */; };
-		14828C5B1BA2E54000A8A170 /* SliceClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14828C5A1BA2E54000A8A170 /* SliceClient.swift */; };
-		14828C5D1BA2E86600A8A170 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14828C5C1BA2E86600A8A170 /* WebViewController.swift */; };
-		14828C621BA3394100A8A170 /* ProductionEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14828C611BA3394100A8A170 /* ProductionEndpoint.swift */; };
-		14C9DD0C1B61A3AA002D5D8E /* NetworkManager.swift in Headers */ = {isa = PBXBuildFile; fileRef = 14E21C171B6192CF00959386 /* NetworkManager.swift */; settings = {ATTRIBUTES = (Public, ); }; };
-		14C9DD0D1B61A3AA002D5D8E /* ServerEndpoint.swift in Headers */ = {isa = PBXBuildFile; fileRef = 14E21C201B6192CF00959386 /* ServerEndpoint.swift */; settings = {ATTRIBUTES = (Public, ); }; };
-		14E21C281B6192CF00959386 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E21C171B6192CF00959386 /* NetworkManager.swift */; };
-		14E21C311B6192CF00959386 /* ServerEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E21C201B6192CF00959386 /* ServerEndpoint.swift */; };
-		14E21C331B6192CF00959386 /* SliceSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 14E21C221B6192CF00959386 /* SliceSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		690C033C842876F654D8EC90 /* Pods_SliceAuthApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 148A7F2BB35B32658368C894 /* Pods_SliceAuthApp.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		14B845701BA3ACB900434DD6 /* SliceSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14E8D5CA1B6189B0001940EF /* SliceSDK.framework */; };
 		6CCAD94FC488C61BA4AEEF53 /* Pods_SliceSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B29ADD2C126D233F5FD66D95 /* Pods_SliceSDK.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		EF4BA74CCCDC1C5FD9BDA007 /* Pods_SliceExampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3D61A052910D9D28BDC9B9E /* Pods_SliceExampleApp.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0357A9F76091692F28DBAF71 /* Pods-SliceSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SliceSDK.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-SliceSDK/Pods-SliceSDK.debug.xcconfig"; sourceTree = "<group>"; };
-		141D91681B6231F600BA94F6 /* SliceAuthApp-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SliceAuthApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		1425918C1BA4C495001248AC /* Foundation+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Foundation+Extensions.swift"; sourceTree = "<group>"; };
+		1425918D1BA4C495001248AC /* NSDate+Formatting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Formatting.swift"; sourceTree = "<group>"; };
+		1425918E1BA4C495001248AC /* NSURL+Query.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSURL+Query.swift"; sourceTree = "<group>"; };
+		1425918F1BA4C495001248AC /* ServerEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerEndpoint.swift; sourceTree = "<group>"; };
+		142591901BA4C495001248AC /* SliceClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliceClient.swift; sourceTree = "<group>"; };
+		142591911BA4C495001248AC /* SliceSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SliceSDK.h; sourceTree = "<group>"; };
+		142591931BA4C495001248AC /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		142591941BA4C495001248AC /* ProductionEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductionEndpoint.swift; sourceTree = "<group>"; };
+		142591951BA4C495001248AC /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		142591A01BA4C4B0001248AC /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		142591A11BA4C4B0001248AC /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		142591A21BA4C4B0001248AC /* SliceExampleApp-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SliceExampleApp-Bridging-Header.h"; sourceTree = "<group>"; };
 		143136F41B629F2D00D0140D /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		143136F81B629F3700D0140D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		1437A9BB1B62232F00814C47 /* SliceSDKApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SliceSDKApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1437A9BB1B62232F00814C47 /* SliceExampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SliceExampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1437A9DF1B62239700814C47 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		1437A9E11B62239700814C47 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1437A9E21B62239700814C47 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
-		1437A9E31B62239700814C47 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		1437A9E41B62239700814C47 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1437A9E61B62239700814C47 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		14697C891B669BBF00BB08E3 /* NSDate+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Extensions.swift"; sourceTree = "<group>"; };
-		14828C581BA2E4F000A8A170 /* AccountCoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountCoder.swift; sourceTree = "<group>"; };
-		14828C5A1BA2E54000A8A170 /* SliceClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliceClient.swift; sourceTree = "<group>"; };
-		14828C5C1BA2E86600A8A170 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
-		14828C611BA3394100A8A170 /* ProductionEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductionEndpoint.swift; sourceTree = "<group>"; };
 		148A7F2BB35B32658368C894 /* Pods_SliceAuthApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SliceAuthApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		14AAA36F1BA37C3E00BC442C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		14E21C141B6192CF00959386 /* Account.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
-		14E21C161B6192CF00959386 /* AccountStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountStore.swift; sourceTree = "<group>"; };
-		14E21C171B6192CF00959386 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		14E21C201B6192CF00959386 /* ServerEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerEndpoint.swift; sourceTree = "<group>"; };
-		14E21C221B6192CF00959386 /* SliceSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SliceSDK.h; sourceTree = "<group>"; };
 		14E21C241B6192CF00959386 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14E8D5CA1B6189B0001940EF /* SliceSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SliceSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FBD5BAAD8BBA537C46AB01B /* Pods-SliceExampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SliceExampleApp.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-SliceExampleApp/Pods-SliceExampleApp.debug.xcconfig"; sourceTree = "<group>"; };
 		565F7AB6159D88955D1D7C29 /* Pods-SliceSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SliceSDK.release.xcconfig"; path = "../Pods/Target Support Files/Pods-SliceSDK/Pods-SliceSDK.release.xcconfig"; sourceTree = "<group>"; };
 		A461E8EC704AA641101F4247 /* Pods_SliceAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SliceAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B29ADD2C126D233F5FD66D95 /* Pods_SliceSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SliceSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3D61A052910D9D28BDC9B9E /* Pods_SliceExampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SliceExampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E390EE73D820F0AA38A6127E /* Pods-SliceExampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SliceExampleApp.release.xcconfig"; path = "../Pods/Target Support Files/Pods-SliceExampleApp/Pods-SliceExampleApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,9 +64,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14B845701BA3ACB900434DD6 /* SliceSDK.framework in Frameworks */,
 				143136F91B629F3700D0140D /* SystemConfiguration.framework in Frameworks */,
 				143136F51B629F2D00D0140D /* AddressBook.framework in Frameworks */,
-				690C033C842876F654D8EC90 /* Pods_SliceAuthApp.framework in Frameworks */,
+				EF4BA74CCCDC1C5FD9BDA007 /* Pods_SliceExampleApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,10 +82,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1425918B1BA4C495001248AC /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				1425918C1BA4C495001248AC /* Foundation+Extensions.swift */,
+				1425918D1BA4C495001248AC /* NSDate+Formatting.swift */,
+				1425918E1BA4C495001248AC /* NSURL+Query.swift */,
+				1425918F1BA4C495001248AC /* ServerEndpoint.swift */,
+				142591901BA4C495001248AC /* SliceClient.swift */,
+				142591911BA4C495001248AC /* SliceSDK.h */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		142591921BA4C495001248AC /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				142591931BA4C495001248AC /* NetworkManager.swift */,
+				142591941BA4C495001248AC /* ProductionEndpoint.swift */,
+				142591951BA4C495001248AC /* WebViewController.swift */,
+			);
+			path = Private;
+			sourceTree = "<group>";
+		};
+		1425919F1BA4C4B0001248AC /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				142591A01BA4C4B0001248AC /* AppDelegate.swift */,
+				142591A11BA4C4B0001248AC /* LaunchScreen.xib */,
+				142591A21BA4C4B0001248AC /* SliceExampleApp-Bridging-Header.h */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
 		1437A9DD1B62239700814C47 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				1437A9E01B62239700814C47 /* Sources */,
+				1425919F1BA4C4B0001248AC /* Source */,
 				1437A9DE1B62239700814C47 /* Resources */,
 				1437A9E51B62239700814C47 /* Target */,
 			);
@@ -99,48 +133,12 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		1437A9E01B62239700814C47 /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				141D91681B6231F600BA94F6 /* SliceAuthApp-Bridging-Header.h */,
-				1437A9E11B62239700814C47 /* AppDelegate.swift */,
-				1437A9E21B62239700814C47 /* LaunchScreen.xib */,
-				1437A9E31B62239700814C47 /* Main.storyboard */,
-				1437A9E41B62239700814C47 /* ViewController.swift */,
-			);
-			path = Sources;
-			sourceTree = "<group>";
-		};
 		1437A9E51B62239700814C47 /* Target */ = {
 			isa = PBXGroup;
 			children = (
 				1437A9E61B62239700814C47 /* Info.plist */,
 			);
 			path = Target;
-			sourceTree = "<group>";
-		};
-		14828C5E1BA2EAB200A8A170 /* Public */ = {
-			isa = PBXGroup;
-			children = (
-				14E21C221B6192CF00959386 /* SliceSDK.h */,
-				14828C5A1BA2E54000A8A170 /* SliceClient.swift */,
-				14E21C201B6192CF00959386 /* ServerEndpoint.swift */,
-				14697C891B669BBF00BB08E3 /* NSDate+Extensions.swift */,
-			);
-			name = Public;
-			sourceTree = "<group>";
-		};
-		14828C601BA3379D00A8A170 /* Private */ = {
-			isa = PBXGroup;
-			children = (
-				14828C5C1BA2E86600A8A170 /* WebViewController.swift */,
-				14E21C171B6192CF00959386 /* NetworkManager.swift */,
-				14828C611BA3394100A8A170 /* ProductionEndpoint.swift */,
-				14E21C141B6192CF00959386 /* Account.swift */,
-				14E21C161B6192CF00959386 /* AccountStore.swift */,
-				14828C581BA2E4F000A8A170 /* AccountCoder.swift */,
-			);
-			name = Private;
 			sourceTree = "<group>";
 		};
 		14E21C121B6192CF00959386 /* Framework */ = {
@@ -155,8 +153,8 @@
 		14E21C131B6192CF00959386 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				14828C601BA3379D00A8A170 /* Private */,
-				14828C5E1BA2EAB200A8A170 /* Public */,
+				1425918B1BA4C495001248AC /* Public */,
+				142591921BA4C495001248AC /* Private */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -184,7 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				14E8D5CA1B6189B0001940EF /* SliceSDK.framework */,
-				1437A9BB1B62232F00814C47 /* SliceSDKApp.app */,
+				1437A9BB1B62232F00814C47 /* SliceExampleApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -198,6 +196,7 @@
 				A461E8EC704AA641101F4247 /* Pods_SliceAuth.framework */,
 				148A7F2BB35B32658368C894 /* Pods_SliceAuthApp.framework */,
 				B29ADD2C126D233F5FD66D95 /* Pods_SliceSDK.framework */,
+				B3D61A052910D9D28BDC9B9E /* Pods_SliceExampleApp.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -207,6 +206,8 @@
 			children = (
 				0357A9F76091692F28DBAF71 /* Pods-SliceSDK.debug.xcconfig */,
 				565F7AB6159D88955D1D7C29 /* Pods-SliceSDK.release.xcconfig */,
+				2FBD5BAAD8BBA537C46AB01B /* Pods-SliceExampleApp.debug.xcconfig */,
+				E390EE73D820F0AA38A6127E /* Pods-SliceExampleApp.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -218,10 +219,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				141D91691B6231F600BA94F6 /* SliceAuthApp-Bridging-Header.h in Headers */,
-				14E21C331B6192CF00959386 /* SliceSDK.h in Headers */,
-				14C9DD0C1B61A3AA002D5D8E /* NetworkManager.swift in Headers */,
-				14C9DD0D1B61A3AA002D5D8E /* ServerEndpoint.swift in Headers */,
+				1425919B1BA4C495001248AC /* SliceSDK.h in Headers */,
+				142591A51BA4C4B0001248AC /* SliceExampleApp-Bridging-Header.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,7 +244,7 @@
 			);
 			name = SliceExampleApp;
 			productName = SliceAuthApp;
-			productReference = 1437A9BB1B62232F00814C47 /* SliceSDKApp.app */;
+			productReference = 1437A9BB1B62232F00814C47 /* SliceExampleApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 		14E8D5C91B6189B0001940EF /* SliceSDK */ = {
@@ -315,8 +314,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1437A9EE1B62254200814C47 /* LaunchScreen.xib in Resources */,
-				1437A9EF1B62254200814C47 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,6 +322,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1437A9E71B62239700814C47 /* Images.xcassets in Resources */,
+				142591A41BA4C4B0001248AC /* LaunchScreen.xib in Resources */,
 				1437A9EC1B62239700814C47 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -359,7 +357,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-SliceAuthApp/Pods-SliceAuthApp-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-SliceExampleApp/Pods-SliceExampleApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B8EC3DBD647E5FFCF63E2208 /* Copy Pods Resources */ = {
@@ -374,7 +372,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-SliceAuthApp/Pods-SliceAuthApp-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-SliceExampleApp/Pods-SliceExampleApp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BEDA3711BD59A1C71AD5B792 /* Check Pods Manifest.lock */ = {
@@ -414,7 +412,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1437A9ED1B62254200814C47 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,12 +419,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14697C8A1B669BBF00BB08E3 /* NSDate+Extensions.swift in Sources */,
-				14828C621BA3394100A8A170 /* ProductionEndpoint.swift in Sources */,
-				14E21C311B6192CF00959386 /* ServerEndpoint.swift in Sources */,
-				14828C5B1BA2E54000A8A170 /* SliceClient.swift in Sources */,
-				14828C5D1BA2E86600A8A170 /* WebViewController.swift in Sources */,
-				14E21C281B6192CF00959386 /* NetworkManager.swift in Sources */,
+				1425919C1BA4C495001248AC /* NetworkManager.swift in Sources */,
+				1425919D1BA4C495001248AC /* ProductionEndpoint.swift in Sources */,
+				142591961BA4C495001248AC /* Foundation+Extensions.swift in Sources */,
+				142591A31BA4C4B0001248AC /* AppDelegate.swift in Sources */,
+				142591981BA4C495001248AC /* NSURL+Query.swift in Sources */,
+				142591971BA4C495001248AC /* NSDate+Formatting.swift in Sources */,
+				142591991BA4C495001248AC /* ServerEndpoint.swift in Sources */,
+				1425919A1BA4C495001248AC /* SliceClient.swift in Sources */,
+				1425919E1BA4C495001248AC /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +436,7 @@
 /* Begin XCBuildConfiguration section */
 		1437A9D71B62232F00814C47 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FBD5BAAD8BBA537C46AB01B /* Pods-SliceExampleApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
@@ -445,19 +446,20 @@
 				);
 				INFOPLIST_FILE = App/Target/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = SliceSDKApp;
+				PRODUCT_NAME = SliceExampleApp;
 				SWIFT_OBJC_BRIDGING_HEADER = "App/Sources/SliceExampleApp-Bridging-Header.h";
 			};
 			name = Debug;
 		};
 		1437A9D81B62232F00814C47 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E390EE73D820F0AA38A6127E /* Pods-SliceExampleApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				INFOPLIST_FILE = App/Target/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = SliceSDKApp;
+				PRODUCT_NAME = SliceExampleApp;
 				SWIFT_OBJC_BRIDGING_HEADER = "App/Sources/SliceExampleApp-Bridging-Header.h";
 			};
 			name = Release;
