@@ -14,10 +14,10 @@ struct ProductionEndpoint: ServerEndpoint {
         return NSURL(scheme: scheme, host: host, path: "/")!
     }
     
-    let authorizationPath = "oauth/authorize"
+    let oauthPath = "oauth"
     
-    var authorizationURL: NSURL {
-        return baseURL.URLByAppendingPathComponent(authorizationPath)
+    var oauthURL: NSURL {
+        return baseURL.URLByAppendingPathComponent(oauthPath)
     }
     
     let apiPath = "api"

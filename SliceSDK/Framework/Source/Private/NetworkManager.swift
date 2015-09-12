@@ -6,8 +6,9 @@
 import Foundation
 import Alamofire
 
+public typealias JSONArray = [JSONDictionary]
 public typealias JSONDictionary = [String : AnyObject]
-public typealias JSONResult = ([JSONDictionary]?, NSError?) -> ()
+public typealias JSONResult = (AnyObject?, NSError?) -> ()
 
 class NetworkManager: NSObject {
     
@@ -20,16 +21,23 @@ class NetworkManager: NSObject {
     
     func requestJSON(request: NetworkRequest, result: JSONResult?) {
         internalManager.request(request).responseJSON { (_, _, JSON, error) in
-            let resources = self.processResponse(JSON)
-            result?(resources, error)
+            let response: AnyObject? = self.processResponse(JSON)
+            result?(response, error)
         }
     }
     
-    func processResponse(JSON: AnyObject?) -> [JSONDictionary]? {
-        if let dictionary = JSON as? [String : AnyObject] {
-            return dictionary["result"] as? [JSONDictionary]
+    func processResponse(JSON: AnyObject?) -> AnyObject? {
+        if let dictionary = JSON as? JSONDictionary {
+            if let array = dictionary["result"] as? [JSONDictionary] {
+                return array
+            } else {
+                return dictionary
+            }
+        } else if let array = JSON as? JSONArray {
+            return array
+        } else {
+            return nil
         }
-        return nil
     }
 }
 
@@ -39,18 +47,20 @@ struct NetworkRequest: URLRequestConvertible {
     let URL: NSURL
     private var queryParameters: [String : AnyObject]?
     private var bodyParameters: [String : AnyObject]?
-    private var authorizationToken: String?
+    private var accessToken: String?
     
-    init(method: Alamofire.Method, URL: NSURL, queryParameters: [String : AnyObject]?, bodyParameters: [String : AnyObject]?, authorizationToken: String?) {
+    init(method: Alamofire.Method, URL: NSURL, queryParameters: [String : AnyObject]?, bodyParameters: [String : AnyObject]?, accessToken: String?) {
         self.method = method
         self.URL = URL
         self.queryParameters = queryParameters
         self.bodyParameters = bodyParameters
-        self.authorizationToken = authorizationToken
+        self.accessToken = accessToken
     }
     
     var URLRequest: NSURLRequest {
         var request = NSMutableURLRequest(URL: URL)
+        
+        request.HTTPMethod = method.rawValue // this must come after encoding for Alamofire to work
         
         if let queryParameters = queryParameters {
             let encoding = Alamofire.ParameterEncoding.URL
@@ -64,12 +74,11 @@ struct NetworkRequest: URLRequestConvertible {
             request = encodedRequest.mutableCopy() as! NSMutableURLRequest
         }
         
-        if let authorizationToken = authorizationToken {
-            let bearerToken = String(format: "Bearer %@", authorizationToken)
+        if let accessToken = accessToken {
+            let bearerToken = String(format: "Bearer %@", accessToken)
             request.setValue(bearerToken, forHTTPHeaderField: "Authorization")
         }
-    
-        request.HTTPMethod = method.rawValue // this must come after encoding for Alamofire to work
+        
         return request
     }
 }
