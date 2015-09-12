@@ -6,8 +6,8 @@
 import Foundation
 import Alamofire
 
-typealias JSONDictionary = [String : AnyObject]
-typealias JSONResult = ([JSONDictionary]?, NSError?) -> ()
+public typealias JSONDictionary = [String : AnyObject]
+public typealias JSONResult = ([JSONDictionary]?, NSError?) -> ()
 
 class NetworkManager: NSObject {
     

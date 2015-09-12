@@ -9,7 +9,7 @@ class DateHelper {
     static var dateFormatters = [String: NSDateFormatter]()
 }
 
-extension NSDate {
+public extension NSDate {
     
     class func dateFormatterWithFormat(format: String) -> NSDateFormatter {
         var dateFormatter = DateHelper.dateFormatters[format]
@@ -22,7 +22,7 @@ extension NSDate {
     }
     
     // String
-    convenience init(string: String, format: String) {
+    public convenience init(string: String, format: String) {
         if let date = NSDate.dateFormatterWithFormat(format).dateFromString(string) {
             self.init(timeIntervalSince1970: date.timeIntervalSince1970)
         } else {
@@ -31,43 +31,43 @@ extension NSDate {
         }
     }
     
-    func stringValue(format: String) -> String {
+    public func stringValue(format: String) -> String {
         return NSDate.dateFormatterWithFormat(format).stringFromDate(self)
     }
     
     // Milliseconds
-    convenience init(millisecondsSince1970 milliseconds: Int64) {
+    public convenience init(millisecondsSince1970 milliseconds: Int64) {
         let interval = Double(milliseconds) / 1000.0
         self.init(timeIntervalSince1970: interval)
     }
     
-    var millisecondsSince1970: Int64 {
+    public var millisecondsSince1970: Int64 {
         return Int64(timeIntervalSince1970 * 1000.0)
     }
     
     // ISO Date Time
-    static var ISODateTimeFormat: String {
+    public static var ISODateTimeFormat: String {
         return "yyyy-MM-dd'T'HH:mm:ss"
     }
     
-    convenience init?(ISODateTimeString string: String) {
+    public convenience init?(ISODateTimeString string: String) {
         self.init(string: string, format: NSDate.ISODateTimeFormat)
     }
     
-    var ISODateTimeString: String {
+    public var ISODateTimeString: String {
         return stringValue(NSDate.ISODateTimeFormat)
     }
     
     // ISO Date
-    static var ISODateFormat: String {
+    public static var ISODateFormat: String {
         return "yyyy-MM-dd"
     }
     
-    convenience init?(ISODateString string: String) {
+    public convenience init?(ISODateString string: String) {
         self.init(string: string, format: NSDate.ISODateFormat)
     }
     
-    var ISODateString: String {
+    public var ISODateString: String {
         return stringValue(NSDate.ISODateFormat)
     }
 }
