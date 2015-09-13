@@ -10,7 +10,7 @@ Pod::Spec.new do |spec|
   spec.author                = { "Sean Meador" => "sean@slice.com" }
   spec.platform              = :ios
   spec.ios.deployment_target = '8.0'
-  spec.source_files          = "SliceAuth/Framework/Source/**/*.{swift}"
+  spec.source_files          = "SliceSDK/Framework/Source/**/*.{swift}"
   spec.frameworks            = "Foundation", "MobileCoreServices", "Security", "SystemConfiguration", "UIKit"
   spec.requires_arc          = true
   spec.dependency "Alamofire", "~> 1.2"
