@@ -19,8 +19,7 @@ com.slice.developer.<client_id>://auth
 
 Here's an example of what this looks like to make sure everything is configured correctly:
 
-
-
+![Alt text](/documentation/DeveloperPortalConfiguration.png?raw=true)
 
 ## Installing
 
@@ -111,4 +110,3 @@ The resources come back in their raw JSON format. We're working on returning mor
 ## Feedback
 
 Feedback and contributions are welcome. Please file issues and don't hesitate to reach out with any questions.
-
