@@ -16,8 +16,8 @@ end
 target :SliceExampleApp do
 
     link_with 'SliceExampleApp'
-    pod 'SliceSDK', :git => '.'
+    pod 'SliceSDK', :git => 'https://github.com/slicedev/slice-ios'
 end
 
+# pod 'SliceSDK', :git => '.'
 # pod 'SliceSDK'
-# pod 'SliceSDK', :git => 'https://github.com/slicedev/slice-ios'
