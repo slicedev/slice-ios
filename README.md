@@ -105,6 +105,7 @@ The resources come back in their raw JSON format. We're working on returning mor
 ## Dependencies
 
 [Alamofire](https://github.com/Alamofire/Alamofire)
+
 [KeychainAccess](https://github.com/kishikawakatsumi/KeychainAccess)
 
 ## Feedback
