@@ -23,7 +23,6 @@
 		143136F91B629F3700D0140D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 143136F81B629F3700D0140D /* SystemConfiguration.framework */; };
 		1437A9E71B62239700814C47 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1437A9DF1B62239700814C47 /* Images.xcassets */; };
 		1437A9EC1B62239700814C47 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1437A9E61B62239700814C47 /* Info.plist */; };
-		14B845701BA3ACB900434DD6 /* SliceSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14E8D5CA1B6189B0001940EF /* SliceSDK.framework */; };
 		6CCAD94FC488C61BA4AEEF53 /* Pods_SliceSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B29ADD2C126D233F5FD66D95 /* Pods_SliceSDK.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		EF4BA74CCCDC1C5FD9BDA007 /* Pods_SliceExampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3D61A052910D9D28BDC9B9E /* Pods_SliceExampleApp.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
@@ -64,7 +63,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14B845701BA3ACB900434DD6 /* SliceSDK.framework in Frameworks */,
 				143136F91B629F3700D0140D /* SystemConfiguration.framework in Frameworks */,
 				143136F51B629F2D00D0140D /* AddressBook.framework in Frameworks */,
 				EF4BA74CCCDC1C5FD9BDA007 /* Pods_SliceExampleApp.framework in Frameworks */,

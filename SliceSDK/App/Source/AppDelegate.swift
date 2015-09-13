@@ -37,7 +37,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func authorize() {
         let application = UIApplication.sharedApplication()
-        sliceClient.authorize(application) { (result, error) in
+        sliceClient.authorize(application) { (accessToken, error) in
             self.fetchOrders()
         }
     }
