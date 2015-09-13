@@ -5,7 +5,7 @@ Pod::Spec.new do |spec|
                                  :tag => spec.version.to_s }
   spec.summary               = "Slice SDK"
   spec.description           = "SDK for using Slice API"
-  spec.license               = "COMMERCIAL"
+  spec.license               = "MIT"
   spec.homepage              = "https://developer.slice.com"
   spec.author                = { "Sean Meador" => "sean@slice.com" }
   spec.platform              = :ios
