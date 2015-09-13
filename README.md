@@ -19,7 +19,7 @@ com.slice.developer.<client_id>://auth
 
 Here's an example of what this looks like to make sure everything is configured correctly:
 
-![Alt text](/documentation/DeveloperPortalConfiguration.png?raw=true)
+![Alt text](/Documentation/DeveloperPortalConfiguration.png?raw=true)
 
 ## Installing
 
