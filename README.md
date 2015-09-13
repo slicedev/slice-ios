@@ -29,7 +29,7 @@ SliceSDK is available via Cocoapods. Add the following to your Podfile:
 pod 'SliceSDK', :git => 'https://github.com/slicedev/slice-ios'
 ```
 
-SliceSDK is written natively in Swift, so you will also need to add `!use_frameworks` to your Podfile.
+SliceSDK is written natively in Swift, so you will also need to add `use_frameworks!` to your Podfile.
 
 
 ## Integration
