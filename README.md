@@ -17,10 +17,9 @@ For the **Redirect URL**, enter the following:
 com.slice.developer.<client_id>://auth
 ```
 
-Here's an example of what this looks like to make sure everything is configured correctly:
+Here's an example of an app that is configured correctly:
 
-
-
+![Alt text](/Documentation/DeveloperPortalConfiguration.png?raw=true)
 
 ## Installing
 
@@ -30,7 +29,7 @@ SliceSDK is available via Cocoapods. Add the following to your Podfile:
 pod 'SliceSDK', :git => 'https://github.com/slicedev/slice-ios'
 ```
 
-SliceSDK is written natively in Swift, so you will also need to add `!use_frameworks` to your Podfile.
+SliceSDK is written natively in Swift, so you will also need to add `use_frameworks!` to your Podfile.
 
 
 ## Integration
@@ -48,7 +47,7 @@ let settings = SliceSettings(clientID: clientID, clientSecret: clientSecret)
 let client = SliceClient(settings: settings)
 ```
 
-By design SliceSDK does not provide singleton access. You'll want to keep a reference to the client however you decide to design your application.
+By design SliceSDK does not provide singleton access. You'll want to keep a reference to the client and use it however you decide to design your application.
 
 ### Authenticating
 
@@ -86,7 +85,7 @@ client.unauthenticate()
 
 ### Requesting Resources
 
-Now for the fun part. To request Slice resources, simply call the following with your client:
+Now for the fun part. To request Slice resources, simply call the following on your client:
 
 ```swift
 client.resources("<resource_name>", parameters: nil) { (resources, error) in
@@ -100,7 +99,7 @@ See the [resource documentation](http://devdocs.slice.com/resources) for all the
 
 There is an optional `parameters` input that let's you filter the results, also explained in the documentation.
 
-The resources come back in their raw JSON format. We're working on returning more usable plain-old-Swift-objects in the near feature.
+The resources come back in a raw JSON format. We're working on returning more usable plain-old-Swift-objects in the near feature.
 
 ## Dependencies
 
@@ -111,4 +110,3 @@ The resources come back in their raw JSON format. We're working on returning mor
 ## Feedback
 
 Feedback and contributions are welcome. Please file issues and don't hesitate to reach out with any questions.
-
