@@ -16,13 +16,13 @@
 		1425919C1BA4C495001248AC /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142591931BA4C495001248AC /* NetworkManager.swift */; };
 		1425919D1BA4C495001248AC /* ProductionEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142591941BA4C495001248AC /* ProductionEndpoint.swift */; };
 		1425919E1BA4C495001248AC /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142591951BA4C495001248AC /* WebViewController.swift */; };
-		142591A31BA4C4B0001248AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142591A01BA4C4B0001248AC /* AppDelegate.swift */; };
-		142591A41BA4C4B0001248AC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 142591A11BA4C4B0001248AC /* LaunchScreen.xib */; };
-		142591A51BA4C4B0001248AC /* SliceExampleApp-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 142591A21BA4C4B0001248AC /* SliceExampleApp-Bridging-Header.h */; };
 		143136F51B629F2D00D0140D /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 143136F41B629F2D00D0140D /* AddressBook.framework */; };
 		143136F91B629F3700D0140D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 143136F81B629F3700D0140D /* SystemConfiguration.framework */; };
-		1437A9E71B62239700814C47 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1437A9DF1B62239700814C47 /* Images.xcassets */; };
-		1437A9EC1B62239700814C47 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1437A9E61B62239700814C47 /* Info.plist */; };
+		144463281BA6599300472A48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142591A01BA4C4B0001248AC /* AppDelegate.swift */; };
+		144463291BA6599300472A48 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 142591A11BA4C4B0001248AC /* LaunchScreen.xib */; };
+		1444632A1BA6599800472A48 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1437A9DF1B62239700814C47 /* Images.xcassets */; };
+		14E778A91BA6659F0061DF3C /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E778A51BA664270061DF3C /* LogInViewController.swift */; };
+		14E778AA1BA666AD0061DF3C /* LogInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14E778A71BA664AB0061DF3C /* LogInViewController.xib */; };
 		6CCAD94FC488C61BA4AEEF53 /* Pods_SliceSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B29ADD2C126D233F5FD66D95 /* Pods_SliceSDK.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		EF4BA74CCCDC1C5FD9BDA007 /* Pods_SliceExampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3D61A052910D9D28BDC9B9E /* Pods_SliceExampleApp.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
@@ -49,6 +49,8 @@
 		148A7F2BB35B32658368C894 /* Pods_SliceAuthApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SliceAuthApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		14AAA36F1BA37C3E00BC442C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		14E21C241B6192CF00959386 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14E778A51BA664270061DF3C /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		14E778A71BA664AB0061DF3C /* LogInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LogInViewController.xib; sourceTree = "<group>"; };
 		14E8D5CA1B6189B0001940EF /* SliceSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SliceSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FBD5BAAD8BBA537C46AB01B /* Pods-SliceExampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SliceExampleApp.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-SliceExampleApp/Pods-SliceExampleApp.debug.xcconfig"; sourceTree = "<group>"; };
 		565F7AB6159D88955D1D7C29 /* Pods-SliceSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SliceSDK.release.xcconfig"; path = "../Pods/Target Support Files/Pods-SliceSDK/Pods-SliceSDK.release.xcconfig"; sourceTree = "<group>"; };
@@ -107,6 +109,8 @@
 			isa = PBXGroup;
 			children = (
 				142591A01BA4C4B0001248AC /* AppDelegate.swift */,
+				14E778A51BA664270061DF3C /* LogInViewController.swift */,
+				14E778A71BA664AB0061DF3C /* LogInViewController.xib */,
 				142591A11BA4C4B0001248AC /* LaunchScreen.xib */,
 				142591A21BA4C4B0001248AC /* SliceExampleApp-Bridging-Header.h */,
 			);
@@ -218,7 +222,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1425919B1BA4C495001248AC /* SliceSDK.h in Headers */,
-				142591A51BA4C4B0001248AC /* SliceExampleApp-Bridging-Header.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +315,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				144463291BA6599300472A48 /* LaunchScreen.xib in Resources */,
+				1444632A1BA6599800472A48 /* Images.xcassets in Resources */,
+				14E778AA1BA666AD0061DF3C /* LogInViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,9 +325,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1437A9E71B62239700814C47 /* Images.xcassets in Resources */,
-				142591A41BA4C4B0001248AC /* LaunchScreen.xib in Resources */,
-				1437A9EC1B62239700814C47 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +413,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14E778A91BA6659F0061DF3C /* LogInViewController.swift in Sources */,
+				144463281BA6599300472A48 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,7 +425,6 @@
 				1425919C1BA4C495001248AC /* NetworkManager.swift in Sources */,
 				1425919D1BA4C495001248AC /* ProductionEndpoint.swift in Sources */,
 				142591961BA4C495001248AC /* Foundation+Extensions.swift in Sources */,
-				142591A31BA4C4B0001248AC /* AppDelegate.swift in Sources */,
 				142591981BA4C495001248AC /* NSURL+Query.swift in Sources */,
 				142591971BA4C495001248AC /* NSDate+Formatting.swift in Sources */,
 				142591991BA4C495001248AC /* ServerEndpoint.swift in Sources */,
@@ -445,7 +449,7 @@
 				INFOPLIST_FILE = App/Target/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = SliceExampleApp;
-				SWIFT_OBJC_BRIDGING_HEADER = "App/Sources/SliceExampleApp-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "App/Source/SliceExampleApp-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -458,7 +462,7 @@
 				INFOPLIST_FILE = App/Target/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = SliceExampleApp;
-				SWIFT_OBJC_BRIDGING_HEADER = "App/Sources/SliceExampleApp-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "App/Source/SliceExampleApp-Bridging-Header.h";
 			};
 			name = Release;
 		};
